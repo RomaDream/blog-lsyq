@@ -123,7 +123,7 @@ public class TagServiceImpl implements TagService {
     }
 
     @Override
-    public List<Tag> listTagByArticleId(Integer articleId) {
+    public List<Tag> listTagByArticleId(Long articleId) {
         List<Tag> tagList = null;
         try {
             tagList = articleTagRefMapper.listTagByArticleId(articleId);

@@ -39,7 +39,7 @@ public interface CategoryService {
      * @param id ID
      */
 
-    void deleteCategory(Integer id);
+    void deleteCategory(Long id);
 
     /**
      * 根据id查询分类信息

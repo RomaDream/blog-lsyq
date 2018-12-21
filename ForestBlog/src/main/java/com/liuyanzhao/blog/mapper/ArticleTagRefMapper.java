@@ -33,7 +33,7 @@ public interface ArticleTagRefMapper {
      * @param articleId 文章ID
      * @return 影响行数
      */
-    int deleteByArticleId(Integer articleId);
+    int deleteByArticleId(Long articleId);
 
     /**
      * 根据标签ID统计文章数
@@ -48,7 +48,7 @@ public interface ArticleTagRefMapper {
      * @param articleId 文章ID
      * @return 标签列表
      */
-    List<Tag> listTagByArticleId(Integer articleId);
+    List<Tag> listTagByArticleId(Long articleId);
 
 
 }

@@ -77,6 +77,6 @@ public interface TagService {
 	 * @param articleId 文章ID
 	 * @return 标签列表
 	 */
-	List<Tag> listTagByArticleId(Integer articleId);
+	List<Tag> listTagByArticleId(Long articleId);
 
 }

@@ -11,15 +11,15 @@ import java.util.List;
 @Data
 public class ArticleParam {
 
-    private Integer articleId;
+    private Long articleId;
 
     private String articleTitle;
 
     private String articleContent;
 
-    private Integer articleParentCategoryId;
+    private Long articleParentCategoryId;
 
-    private Integer articleChildCategoryId;
+    private Long articleChildCategoryId;
 
     private Integer articleOrder;
 

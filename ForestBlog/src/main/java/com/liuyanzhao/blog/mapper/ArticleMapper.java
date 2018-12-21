@@ -152,7 +152,7 @@ public interface ArticleMapper {
      *
      * @param articleId 文章ID
      */
-    void updateCommentCount(@Param(value = "articleId") Integer articleId);
+    void updateCommentCount(@Param(value = "articleId") Long articleId);
 
     /**
      * 获得最后更新的记录

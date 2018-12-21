@@ -74,7 +74,7 @@ public class ArticleServiceImpl implements ArticleService {
     }
 
     @Override
-    public Integer countArticleByCategoryId(Integer categoryId) {
+    public Integer countArticleByCategoryId(Long categoryId) {
         Integer count = 0;
         try {
             count = articleCategoryRefMapper.countArticleByCategoryId(categoryId);
@@ -230,7 +230,7 @@ public class ArticleServiceImpl implements ArticleService {
 
 
     @Override
-    public void updateCommentCount(Integer articleId) {
+    public void updateCommentCount(Long articleId) {
         articleMapper.updateCommentCount(articleId);
     }
 

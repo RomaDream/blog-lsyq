@@ -14,14 +14,14 @@ public class ArticleCategoryRef implements Serializable{
 
     private static final long serialVersionUID = -6809206515467725995L;
 
-    private Integer articleId;
+    private Long articleId;
 
-    private Integer categoryId;
+    private Long categoryId;
 
     public ArticleCategoryRef() {
     }
 
-    public ArticleCategoryRef(Integer articleId, Integer categoryId) {
+    public ArticleCategoryRef(Long articleId, Long categoryId) {
         this.articleId = articleId;
         this.categoryId = categoryId;
     }

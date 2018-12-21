@@ -47,7 +47,7 @@ public interface CategoryMapper {
      *
      * @param id 文章ID
      */
-    int deleteCategory(Integer id);
+    int deleteCategory(Long id);
 
     /**
      * 查询分类总数

@@ -42,7 +42,7 @@ public interface ArticleService {
      * @param categoryId 分类ID
      * @return 数量
      */
-    Integer countArticleByCategoryId(Integer categoryId);
+    Integer countArticleByCategoryId(Long categoryId);
 
     /**
      * 统计有这个表情的文章数
@@ -172,7 +172,7 @@ public interface ArticleService {
      *
      * @param articleId 文章ID
      */
-    void updateCommentCount(Integer articleId);
+    void updateCommentCount(Long articleId);
 
     /**
      * 获得最后更新记录

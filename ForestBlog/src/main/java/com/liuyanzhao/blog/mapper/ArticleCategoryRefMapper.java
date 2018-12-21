@@ -26,21 +26,21 @@ public interface ArticleCategoryRefMapper {
      * @param categoryId 分类ID
      * @return 影响行数
      */
-    int deleteByCategoryId(Integer categoryId);
+    int deleteByCategoryId(Long categoryId);
 
     /**
      * 根据文章ID删除记录
      * @param articleId 文章ID
      * @return 影响行数
      */
-    int deleteByArticleId(Integer articleId);
+    int deleteByArticleId(Long articleId);
 
     /**
      * 根据分类ID统计文章数
      * @param categoryId 分类ID
      * @return 文章数量
      */
-    int countArticleByCategoryId(Integer categoryId);
+    int countArticleByCategoryId(Long categoryId);
 
 
     /**
@@ -65,6 +65,6 @@ public interface ArticleCategoryRefMapper {
      * @param articleId 文章ID
      * @return 分类列表
      */
-    List<Category> listCategoryByArticleId(Integer articleId);
+    List<Category> listCategoryByArticleId(Long articleId);
 
 }

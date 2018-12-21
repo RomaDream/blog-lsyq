@@ -66,7 +66,7 @@ public class BackCategoryController {
      * @return
      */
     @RequestMapping(value = "/delete/{id}")
-    public String deleteCategory(@PathVariable("id") Integer id)  {
+    public String deleteCategory(@PathVariable("id") Long id)  {
         //禁止删除有文章的分类
         int count = articleService.countArticleByCategoryId(id);
 

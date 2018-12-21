@@ -13,7 +13,7 @@ public class Category implements Serializable {
 
     private static final long serialVersionUID = 6687286913317513141L;
 
-    private Integer categoryId;
+    private Long categoryId;
 
     private Integer categoryPid;
 
@@ -21,7 +21,7 @@ public class Category implements Serializable {
 
     private String categoryDescription;
 
-    private Integer categoryOrder;
+    private Long categoryOrder;
 
     private String categoryIcon;
 
@@ -30,7 +30,7 @@ public class Category implements Serializable {
      */
     private Integer articleCount;
 
-    public Category(Integer categoryId, Integer categoryPid, String categoryName, String categoryDescription, Integer categoryOrder, String categoryIcon,Integer articleCount) {
+    public Category(Long categoryId, Integer categoryPid, String categoryName, String categoryDescription, Long categoryOrder, String categoryIcon,Integer articleCount) {
         this.categoryId = categoryId;
         this.categoryPid = categoryPid;
         this.categoryName = categoryName;
@@ -40,12 +40,21 @@ public class Category implements Serializable {
         this.articleCount = articleCount;
     }
 
-    public Category(Integer categoryId, String categoryName) {
+//    category_id,
+//    category_pid,
+//    category_name,
+//    category_description,
+//    category_order,
+//    category_icon 
+    
+    // category.category_id, category.category_pid, category.category_name
+    
+    public Category(Long categoryId, String categoryName) {
         this.categoryId = categoryId;
         this.categoryName = categoryName;
     }
 
-    public Category(Integer categoryId) {
+    public Category(Long categoryId) {
         this.categoryId = categoryId;
     }
 
@@ -55,8 +64,25 @@ public class Category implements Serializable {
      * @return 分类
      */
     public static Category Default() {
-        return new Category(100000000, "未分类");
+        return new Category(100000000l, "未分类");
     }
+
+	public Category(Long categoryId, Integer categoryPid,String categoryName, String categoryDescription,
+			Long categoryOrder, String categoryIcon) {
+		this.categoryId = categoryId;
+		this.categoryPid = categoryPid;
+		this.categoryName = categoryName;
+		this.categoryDescription = categoryDescription;
+		this.categoryOrder = categoryOrder;
+		this.categoryIcon = categoryIcon;
+	}
+
+	public Category(Long categoryId, Integer categoryPid, String categoryName) {
+		super();
+		this.categoryId = categoryId;
+		this.categoryPid = categoryPid;
+		this.categoryName = categoryName;
+	}
 
 
 }

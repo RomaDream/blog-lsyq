@@ -35,7 +35,7 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     @Transactional(rollbackFor = Exception.class)
     @CacheEvict(value = "default", key = "'category:'+#id")
-    public void deleteCategory(Integer id) {
+    public void deleteCategory(Long id) {
         try {
             categoryMapper.deleteCategory(id);
             articleCategoryRefMapper.deleteByCategoryId(id);

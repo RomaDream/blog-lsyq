@@ -14,7 +14,7 @@ public class Article implements Serializable{
 
     private static final long serialVersionUID = 5207865247400761539L;
 
-    private Integer articleId;
+    private Long articleId;
 
     private Integer articleUserId;
 

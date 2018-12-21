@@ -46,7 +46,7 @@
         WHERE category_id = #{value}
     </select>
 
-    <select id="listCategoryByArticleId" parameterType="java.lang.Integer"
+    <select id="listCategoryByArticleId" parameterType="java.lang.Long"
             resultType="com.liuyanzhao.blog.entity.Category">
         SELECT
         category.category_id, category.category_pid, category.category_name
